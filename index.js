@@ -82,7 +82,7 @@ const securityGroup = new aws.ec2.SecurityGroup("web-sg", {
 
 // Create key pair
 const keyPair = new aws.ec2.KeyPair("my-key-pair", {
-    publicKey: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDArapWxwBNgudufV9sVvXYahfFAkmUEjZ5E7K9/hWkIxkUqh0pceYynJAbz/u6BSaXEOmQ1nsnt7Cln0VVGDyCWbgD6pAz5cmdg+iezFz1aNDC9eo4J1cWzhASYvKYNBeaIVl6rT4/bZNsH86BRvkJoB5Mfn2F+IdtgzNgpQ2zNoNpFYByT7lEG3150eD/a3ANIeHrMIrOxqGhvbNd4ED38TYY1B+eDxUDN64fBvDtTdaIdG5Bn7t9F+8VC6MkUp5jEkuHNC2s4btTm4E1GFwEHMU+wPHTusT1eTkfZR7Sb5QXhj78CmvjZvnY+7LwdLu7XNdOgEqmwlmqDu2L2wi3 "
+    publicKey: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDXUVAI1MI88+huM6HefFbfleoSMm0cFrX3hLiJ0W3Od5eCqPPR5CG5vWvOgOF5lV82yG4YPgF6+ISjqdSIgNNFvrPQQufUKcHHtRT4CN280Oj51lMeaqBtge2YIXVIx8BlHV+1JOjSJoAf8xzlFfOKun9DiedGeVq/frTruWEIVAFqsarCXNwrFx44gq4Xt4knZOg/32Pdkt0Ndaf8/oPQZFLGV5XLJWJ+K5myL4lnfyzcLhG/8WF005C/jyWzl40gA9Zn2Cippc07gHbem2NLj81gL0t/xYv0enYbD/8n/ROs7YHG5IeAlbYPsWwAN6PFiQt+VAXw4QYnS8vXy5h7 root@14fed3042a0675aa"
 })
 
 // Create two EC2 instances
