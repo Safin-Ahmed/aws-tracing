@@ -24,7 +24,7 @@ const internetGateway = new aws.ec2.InternetGateway("my-igw", {
 const publicSubnet = new aws.ec2.Subnet("public-subnet", {
     vpcId: vpc.id,
     cidrBlock: "10.0.1.0/24",
-    availabilityZone: "us-east-1a",
+    availabilityZone: "ap-southeast-1a",
     mapPublicIpOnLaunch: true,
     tags: {
         Name: "public-subnet"
