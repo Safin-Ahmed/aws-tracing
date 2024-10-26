@@ -37,11 +37,11 @@ jobs:
         run: pulumi preview
 
       - name: Clear Pulumi State
-         env:
+        env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-         run: |
+        run: |
           rm -rf .pulumi
           pulumi stack init dev  # Initialize a new stack
 
