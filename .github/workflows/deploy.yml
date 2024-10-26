@@ -43,7 +43,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run: |
           rm -rf .pulumi
-          pulumi stack init dev  # Initialize a new stack
+          pulumi stack select dev  # Initialize a new stack
 
       - name: Pulumi Up
         env:
